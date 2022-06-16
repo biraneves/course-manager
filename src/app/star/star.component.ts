@@ -3,7 +3,8 @@ import { VirtualTimeScheduler } from "rxjs";
 
 @Component({
     selector: 'app-star',
-    templateUrl: './star.component.html'
+    templateUrl: './star.component.html',
+    styleUrls: ['./star.component.css']
 })
 export class StarComponent implements OnChanges {
 
@@ -13,7 +14,7 @@ export class StarComponent implements OnChanges {
     starWidth: number = 0;
     
     ngOnChanges(changes: SimpleChanges): void {
-        this.starWidth = this.rating * 94 / 5;
+        this.starWidth = this.rating * 74 / 5;
     }
 
 }
